@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+</head>
+
+<body>
+    <div class="container">
+
+        <p>
+            <label for="new-task">Add item</label>
+            <input type="text" id="new-task" placeholder="Task name">
+            <button>Add</button>
+            <input type="date" id="due-date">
+        </p>
+
+        <h3>Todo</h3>
+
+        <ul id="incomplete-tasks">
+            <li>
+                <input type="checkbox">
+                <label>Pay the bills</label>
+                <input type="text">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+                <span>Due date: </span>
+                <span id="date">2000-10-12</span>
+                <input type="date">
+            </li>
+            <li>
+                <input type="checkbox">
+                <label>Go shopping</label>
+                <input type="text">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+                <span>Due date: </span>
+                <span id="date">2000-10-12</span>
+                <input type="date">
+            </li>
+        </ul>
+
+        <h3>Completed</h3>
+
+        <ul id="completed-tasks">
+            <li>
+                <input type="checkbox" checked>
+                <label>See the doctor</label>
+                <input type="text">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+                <span>Due date: </span>
+                <span id="date">2000-10-12</span>
+                <input type="date">
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript" src="app.js"></script>   
+</body>
+</html>
